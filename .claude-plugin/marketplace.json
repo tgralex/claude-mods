@@ -1,0 +1,19 @@
+{
+  "name": "claude-mods",
+  "owner": {
+    "name": "OGs-Sandbox"
+  },
+  "description": "Claude Code mods from OGs-Sandbox: install only the ones you want.",
+  "plugins": [
+    {
+      "name": "cost-guard",
+      "source": "./mods/cost-guard",
+      "description": "Holds a message that would cost more than your token or dollar limit (cold prompt cache or a very large message), explains why, and asks before sending. Can also keep the cache warm during a break."
+    },
+    {
+      "name": "read-aloud",
+      "source": "./mods/read-aloud",
+      "description": "Reads Claude's replies and plans aloud, whole or just the text you selected, with a Stop button while it reads."
+    }
+  ]
+}

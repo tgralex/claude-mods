@@ -1,0 +1,27 @@
+{
+  "name": "read-aloud",
+  "version": "0.1.0",
+  "description": "Reads Claude's replies and plans aloud, whole or just the text you selected, with a Stop button while it reads.",
+  "author": { "name": "Tigran Aleksanyan" },
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "voice": {
+      "type": "string",
+      "title": "Voice",
+      "description": "The system voice's exact name (Microsoft Zira Desktop on Windows, Samantha on macOS). Empty uses the system's default voice.",
+      "default": ""
+    },
+    "speed": {
+      "type": "number",
+      "title": "Speed (%)",
+      "description": "How fast to read: 100 is normal, 150 half again as fast, 75 slower. From 30 to 300.",
+      "default": 100
+    },
+    "readCode": {
+      "type": "boolean",
+      "title": "Read code blocks",
+      "description": "Read the contents of code blocks too. Off, each code block is announced as skipped.",
+      "default": false
+    }
+  }
+}
